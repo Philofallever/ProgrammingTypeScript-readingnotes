@@ -100,7 +100,7 @@ let a3: [number] = [1];
 
 let al: readonly number[] = [1, 2, 3, 4];
 let al1 = al.concat(5);
-let al2:ReadonlyArray<number> = al.concat(5);
+let al2: ReadonlyArray<number> = al.concat(5);
 
 enum Language
 {
@@ -109,8 +109,8 @@ enum Language
     Russian
 }
 
-let e1 = Language.Russian
-let e2 = Language['English']
+let e1 = Language.Russian;
+let e2 = Language['English'];
 
 //枚举合并
 enum Language2
@@ -121,7 +121,7 @@ enum Language2
 
 enum Language2
 {
-    Chinese =2,
+    Chinese = 2,
 }
 
 
@@ -131,3 +131,26 @@ const enum Language3
     English,
     Spaish,
 }
+
+interface Animal
+{
+    eat(food: string): void;
+    sleep(hours: number): void;
+    age: number;
+}
+
+class Catt implements Animal
+{
+    eat(food: string): void
+    {
+     
+    }
+    sleep(hours: number): void
+    {
+      
+    }
+    age = 5;
+}
+
+let catt1 = (new Catt()).age
+
