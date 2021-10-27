@@ -299,4 +299,5 @@ type c = Partial<User>;
 type c1 = Readonly<User>;
 // import 
 
-type CompanyID = string & { readonly band :unique symbol; }
+type CompanyID = string & { readonly band: unique symbol; }
+Optin
